@@ -19,6 +19,15 @@ pip install patsy
 pip install statsmodels
 ```
 
+### Singularity
+
+```bash
+git clone https://www.github.com/researchapps/edd
+cd edd
+sudo singularity create --size 4000 edd.img
+sudo singularity bootstrap edd.img Singularity
+```
+
 EDD currently uses the pybedtools library that again requires the [bedtools](https://github.com/arq5x/bedtools2) program to be installed and on the path. See the [bedtools documentation for installation instructions](http://bedtools.readthedocs.org/en/latest/content/installation.html)
 
 ## Installation
